@@ -4,14 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- ============================================================ -->
-  <!-- CLIENT HINTS DELEGATION (for Bemob / go.orgsite.store)      -->
-  <!-- ============================================================ -->
+  <!-- CLIENT HINTS DELEGATION -->
   <meta http-equiv="delegate-ch" content="sec-ch-ua https://go.orgsite.store; sec-ch-ua-mobile https://go.orgsite.store; sec-ch-ua-arch https://go.orgsite.store; sec-ch-ua-model https://go.orgsite.store; sec-ch-ua-platform https://go.orgsite.store; sec-ch-ua-platform-version https://go.orgsite.store; sec-ch-ua-bitness https://go.orgsite.store; sec-ch-ua-full-version-list https://go.orgsite.store; sec-ch-ua-full-version https://go.orgsite.store">
 
-  <!-- ============================================================ -->
-  <!-- META PIXEL (ID: 976084828803103)                             -->
-  <!-- ============================================================ -->
+  <!-- META PIXEL -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -23,438 +19,229 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '976084828803103');
     fbq('track', 'PageView');
+    fbq('track', 'ViewContent');
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
          src="https://www.facebook.com/tr?id=976084828803103&ev=PageView&noscript=1" />
   </noscript>
 
-  <title>Share Your Opinion – Earn Rewards</title>
+  <title>Earn Rewards Online - Surveys, Games & Offers</title>
+  <meta name="description" content="Join for free and earn rewards by completing surveys, playing games, and trying apps. Get Amazon, PayPal, and Visa gift cards.">
 
   <style>
-    /* ── Reset ── */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html, body {
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: #f5f9fe;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0;
-    }
-
-    .fullscreen {
-      width: 100vw;
-      height: 100vh;
-      max-width: 100%;
-      max-height: 100%;
-      background: #ffffff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 2.5rem 3rem;
-      box-shadow: none;
-      border-radius: 0;
-      position: relative;
-      overflow-y: auto;
-    }
-
-    .content {
-      max-width: 720px;
-      margin: 0 auto;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      justify-content: center;
-      min-height: 80vh;
-    }
-
-    .trust-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      background: #eaf6ef;
-      color: #1a7a4a;
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 0.5rem 1.5rem;
-      border-radius: 100px;
-      letter-spacing: 0.3px;
-      text-transform: uppercase;
-      margin-bottom: 1.8rem;
-    }
-
-    h1 {
-      font-size: clamp(2.8rem, 8vw, 4.8rem);
-      font-weight: 800;
-      color: #0b1a2e;
-      line-height: 1.1;
-      margin-bottom: 0.2rem;
-    }
-    h1 .highlight {
-      color: #2a9d8f;
-      display: inline-block;
-    }
-
-    .sub {
-      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
-      color: #3a4d62;
-      margin-top: 0.5rem;
-      margin-bottom: 1.5rem;
-      font-weight: 400;
-      max-width: 600px;
-    }
-    .sub strong {
-      color: #0b1a2e;
-    }
-
-    .proof-row {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      gap: 1.2rem 2rem;
-      background: #f8faff;
-      border: 1px solid #e6edf4;
-      border-radius: 3rem;
-      padding: 0.7rem 2rem;
-      margin-bottom: 2.2rem;
-      width: 100%;
-      max-width: 600px;
-    }
-
-    .proof-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.95rem;
-      color: #1a2a3a;
-    }
-    .proof-item .stars {
-      color: #f4b740;
-      font-size: 1.1rem;
-      letter-spacing: 2px;
-    }
-    .proof-item .count {
-      font-weight: 700;
-      color: #0b1a2e;
-    }
-
-    .timer {
-      font-weight: 700;
-      color: #c44536;
-      background: #fef0ed;
-      padding: 0.3rem 1rem;
-      border-radius: 100px;
-      font-size: 1.1rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-    }
-    .timer span {
-      font-size: 1.3rem;
-    }
-
-    .benefits {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1.2rem;
-      width: 100%;
-      max-width: 700px;
-      margin-bottom: 2.2rem;
-    }
-
-    .benefit-item {
-      background: #f9fbfd;
-      border-radius: 1.5rem;
-      padding: 1.4rem 0.8rem;
-      text-align: center;
-      border: 1px solid transparent;
-      transition: 0.15s;
-    }
-    .benefit-item:hover {
-      border-color: #d0dfec;
-      background: #f4f8fe;
-    }
-    .benefit-item .icon {
-      font-size: 2.2rem;
-      display: block;
-      margin-bottom: 0.4rem;
-    }
-    .benefit-item .title {
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #0b1a2e;
-    }
-    .benefit-item .desc {
-      font-size: 0.85rem;
-      color: #5a6f84;
-      margin-top: 0.2rem;
-      line-height: 1.3;
-    }
-
-    .cta-link {
-      display: inline-block;
-      width: 100%;
-      max-width: 500px;
-      background: #2a9d8f;
-      border: none;
-      padding: 1.3rem 1.5rem;
-      border-radius: 4rem;
-      color: #fff;
-      font-size: 1.5rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 12px 36px rgba(42, 157, 143, 0.4);
-      text-decoration: none;
-      letter-spacing: 0.5px;
-      text-align: center;
-      box-sizing: border-box;
-    }
-    .cta-link:hover {
-      background: #23877b;
-      transform: scale(1.01);
-      box-shadow: 0 16px 44px rgba(42, 157, 143, 0.5);
-      color: #fff;
-      text-decoration: none;
-    }
-    .cta-link .arrow {
-      font-size: 1.8rem;
-      line-height: 1;
-      display: inline-block;
-      transition: transform 0.2s;
-    }
-    .cta-link:hover .arrow {
-      transform: translateX(6px);
-    }
-
-    .disclosure {
-      font-size: 0.7rem;
-      color: #8a9db0;
-      margin-top: 0.8rem;
-      letter-spacing: 0.2px;
-    }
-
-    .footer {
-      margin-top: 2.5rem;
-      width: 100%;
-      max-width: 700px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.8rem 1.8rem;
-      font-size: 0.75rem;
-      color: #8a9db0;
-      border-top: 1px solid #e9eff5;
-      padding-top: 1.5rem;
-    }
-    .footer a {
-      color: #4a6b8a;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    .footer a:hover {
-      text-decoration: underline;
-      color: #1a3a5a;
-    }
-
-    @media (max-width: 700px) {
-      .fullscreen {
-        padding: 1.8rem 1.2rem;
-        justify-content: center;
-      }
-      .content {
-        min-height: auto;
-      }
-      h1 {
-        font-size: clamp(2.2rem, 10vw, 3.2rem);
-      }
-      .benefits {
-        grid-template-columns: 1fr;
-        gap: 0.7rem;
-        max-width: 400px;
-      }
-      .benefit-item {
-        padding: 0.9rem 0.6rem;
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
-        text-align: left;
-      }
-      .benefit-item .icon {
-        font-size: 1.6rem;
-        margin-bottom: 0;
-      }
-      .benefit-item .title {
-        font-size: 0.95rem;
-      }
-      .benefit-item .desc {
-        font-size: 0.75rem;
-      }
-      .proof-row {
-        border-radius: 1.5rem;
-        padding: 0.7rem 1rem;
-        gap: 0.6rem;
-        flex-direction: column;
-      }
-      .cta-link {
-        font-size: 1.2rem;
-        padding: 1rem;
-      }
-      .footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 0.4rem;
-        font-size: 0.7rem;
-      }
-    }
-
-    @media (max-width: 400px) {
-      .fullscreen {
-        padding: 1rem 0.8rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-    }
+    *{margin:0;padding:0;box-sizing:border-box;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+    body{background:#0a0f1e;color:#fff;line-height:1.6}
+    .container{max-width:900px;margin:0 auto;padding:20px}
+    .hero{background:linear-gradient(135deg,#0a0f1e 0%,#1a2e4e 100%);padding:60px 20px;text-align:center;border-bottom:3px solid #00d26a}
+    .logo{font-size:28px;font-weight:800;color:#00d26a;margin-bottom:15px}
+    .hero h1{font-size:42px;margin:15px 0;line-height:1.2}
+    .hero h1 span{color:#00d26a}
+    .hero p{font-size:18px;color:#b8c5d6;margin-bottom:30px}
+    .cta-btn{background:#00d26a;color:#000;padding:18px 40px;font-size:20px;font-weight:700;border:none;border-radius:12px;cursor:pointer;text-decoration:none;display:inline-block;transition:0.3s}
+    .cta-btn:hover{transform:scale(1.05);background:#00e673}
+    .trust-badges{display:flex;justify-content:center;gap:20px;margin-top:20px;flex-wrap:wrap}
+    .badge{background:#111827;padding:8px 15px;border-radius:20px;font-size:13px;color:#00d26a}
+    .section{padding:60px 20px}
+    .section h2{text-align:center;font-size:32px;margin-bottom:15px}
+    .section p.sub{text-align:center;color:#b8c5d6;margin-bottom:40px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+    .card{background:#111827;padding:25px;border-radius:15px;border:1px solid #1f2937;text-align:center}
+    .card-icon{font-size:40px;margin-bottom:15px}
+    .card h3{color:#00d26a;margin-bottom:10px}
+    .phone-mockup{text-align:center;margin:40px 0}
+    .phone-mockup img{max-width:320px;width:100%;border-radius:30px;box-shadow:0 20px 50px rgba(0,210,106,0.2)}
+    .steps{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .step{flex:1;min-width:200px;text-align:center}
+    .step-num{background:#00d26a;color:#000;width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;margin:0 auto 15px}
+    .testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .testimonial{background:#111827;padding:20px;border-radius:12px;border-left:4px solid #00d26a}
+    .testimonial .name{font-weight:700;color:#00d26a}
+    .faq-item{background:#111827;padding:20px;border-radius:10px;margin-bottom:15px}
+    .faq-item h4{color:#00d26a;margin-bottom:8px}
+    .footer{text-align:center;padding:40px 20px;background:#05070f;color:#777;font-size:14px}
+    .sticky-cta{position:fixed;bottom:0;left:0;right:0;background:#111827;padding:15px;text-align:center;border-top:2px solid #00d26a;z-index:999}
+    @media(max-width:600px){.hero h1{font-size:28px}.cta-btn{width:100%}}
   </style>
 </head>
 <body>
 
-<div class="fullscreen">
-  <div class="content">
-
-    <!-- Trust Badge -->
-    <div class="trust-badge">
-      🔒 SSL Encrypted &bull; 100% Private
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="logo">🟢 EARN REWARDS</div>
+    <h1>Earn Rewards <span>Your Way</span></h1>
+    <p>Complete surveys, play games, try apps and explore other offers to earn real rewards.</p>
+    <a href="https://go.orgsite.store/click/1?ns=c%3D39b64b47-9b66-4827-9d6b-bb90d8a344bd..l%3D2..a%3D0..b%3D0" class="cta-btn" id="ctaButton">JOIN FREE & START EARNING</a>
+    <div class="trust-badges">
+      <div class="badge">✅ Free to Join</div>
+      <div class="badge">🔒 Safe & Secure</div>
+      <div class="badge">⚡ Instant Rewards</div>
     </div>
-
-    <!-- Headline -->
-    <h1>
-      Your Opinion.<br />
-      <span class="highlight">$5 Gift Card.</span>
-    </h1>
-    <p class="sub">
-      <strong>Share your thoughts</strong> in social surveys and get rewarded instantly.
-    </p>
-
-    <!-- Proof Row: Stars + Timer -->
-    <div class="proof-row">
-      <div class="proof-item">
-        <span class="stars">★★★★★</span>
-        <span><span class="count">50,000+</span> members earned <strong>$200+</strong> this year</span>
-      </div>
-      <div class="proof-item timer" id="timerDisplay">
-        <span>⏱</span> <span id="timerText">01:17</span>
-      </div>
-    </div>
-
-    <!-- Benefits -->
-    <div class="benefits">
-      <div class="benefit-item">
-        <span class="icon">✅</span>
-        <div class="title">Free to Join</div>
-        <div class="desc">No fees, no hidden costs</div>
-      </div>
-      <div class="benefit-item">
-        <span class="icon">🎁</span>
-        <div class="title">Earn for Every Survey</div>
-        <div class="desc">Redeem for Amazon, PayPal &amp; more</div>
-      </div>
-      <div class="benefit-item">
-        <span class="icon">🛡️</span>
-        <div class="title">Your Data is Safe</div>
-        <div class="desc">We never sell or share your info</div>
-      </div>
-    </div>
-
-    <!-- ============================================================ -->
-    <!-- CTA LINK – YOUR EXACT URL (with full ?ns= query string)      -->
-    <!-- ============================================================ -->
-    <a href="https://go.orgsite.store/click/1?ns=c%3D6d8fafb8-50c8-4860-813b-029192258b9a..l%3D2..a%3D0..b%3D0" id="ctaButton" class="cta-link">
-      Start Earning Rewards
-      <span class="arrow">→</span>
-    </a>
-
-    <div class="disclosure">
-      * Rewards vary by survey. Gift cards delivered upon completion.
-    </div>
-
-    <!-- Footer – address removed, only privacy/terms/contact remain -->
-    <div class="footer">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Service</a>
-      <a href="#">Contact Us</a>
-    </div>
-
   </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container">
+    <h2>How It Works</h2>
+    <p class="sub">3 simple steps to start earning today</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Join Free</h3>
+        <p>Takes 30 seconds. No credit card needed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Complete Offers</h3>
+        <p>Surveys, games, apps. Pick what you like.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Get Rewarded</h3>
+        <p>Redeem for Amazon, PayPal, Visa gift cards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" style="background:#111827">
+  <div class="container">
+    <h2>Earn Rewards Your Way</h2>
+    <p class="sub">Multiple ways to earn, every single day</p>
+    <div class="grid">
+      <div class="card">
+        <div class="card-icon">📝</div>
+        <h3>Complete Surveys</h3>
+        <p>Share your opinion with top brands. Earn $0.50 - $5 per survey.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎮</div>
+        <h3>Play Games</h3>
+        <p>Download and play new games. Get paid to have fun.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h3>Try Apps</h3>
+        <p>Install and test new apps. Easy money in your spare time.</p>
+      </div>
+    </div>
+    
+    <div class="phone-mockup">
+      <img src="https://i.imgur.com/8Km9tLL.png" alt="App Dashboard showing $25 balance and offers">
+    </div>
+    
+    <div style="text-align:center">
+      <a href="https://go.orgsite.store/click/1?ns=c%3D39b64b47-9b66-4827-9d6b-bb90d8a344bd..l%3D2..a%3D0..b%3D0" class="cta-btn" id="ctaButton2">START EARNING NOW</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="section">
+  <div class="container">
+    <h2>50,000+ Members Already Earning</h2>
+    <p class="sub">Real people getting real rewards</p>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"I made $47 my first month just doing surveys on my lunch break. Cashed out to PayPal in 2 days!"</p>
+        <div class="name">- Sarah M, Texas</div>
+      </div>
+      <div class="testimonial">
+        <p>"Love the games section. I'm literally getting paid to play on my phone. Withdraw to Amazon was super fast."</p>
+        <div class="name">- Mike R, California</div>
+      </div>
+      <div class="testimonial">
+        <p>"Finally something legit. Free to join and I already got 3 gift cards. The surveys are quick."</p>
+        <div class="name">- Jessica L, Florida</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="section" style="background:#111827">
+  <div class="container">
+    <h2>Why Choose Us?</h2>
+    <div class="grid">
+      <div class="card"><h3>100% Free</h3><p>Never pay anything. Earning is completely free.</p></div>
+      <div class="card"><h3>Fast Payouts</h3><p>Get your Amazon, PayPal, or Visa card in 24-48 hours.</p></div>
+      <div class="card"><h3>New Offers Daily</h3><p>Fresh surveys and games added every day so you never run out.</p></div>
+      <div class="card"><h3>24/7 Support</h3><p>Real human support if you ever need help.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>Is this really free?</h4>
+      <p>Yes. 100% free to join and use. You will never be asked for a credit card.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How do I get paid?</h4>
+      <p>Choose Amazon, PayPal, or Visa gift cards. Rewards are sent within 24-48 hours after you request.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How much can I earn?</h4>
+      <p>Most members earn $20-$100 per month. It depends on how many offers you complete.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Is my information safe?</h4>
+      <p>Yes. We use bank-level encryption and never sell your data. Safe & Secure.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="hero">
+  <div class="container">
+    <h2>Ready to Start Earning?</h2>
+    <p>Join thousands of members earning rewards in their spare time</p>
+    <a href="https://go.orgsite.store/click/1?ns=c%3D39b64b47-9b66-4827-9d6b-bb90d8a344bd..l%3D2..a%3D0..b%3D0" class="cta-btn" id="ctaButton3">JOIN FREE & START EARNING</a>
+    <p style="margin-top:15px;font-size:13px;color:#b8c5d6">*Terms and Conditions Apply. This is a survey reward offer.</p>
+  </div>
+</section>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+  <a href="https://go.orgsite.store/click/1?ns=c%3D39b64b47-9b66-4827-9d6b-bb90d8a344bd..l%3D2..a%3D0..b%3D0" class="cta-btn" id="ctaButtonSticky">Claim Your Rewards Now</a>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2026 EarnRewards. All rights reserved.</p>
+  <p>*Results may vary. This is a marketing offer for survey participation.</p>
 </div>
 
 <!-- ============================================================ -->
-<!-- SCRIPTS: Timer + Facebook Lead Event                         -->
+<!-- SCRIPTS: Facebook Lead Event                                  -->
 <!-- ============================================================ -->
 <script>
-  // ── Timer (starts at 1:17) ──
-  (function() {
-    let seconds = 77;
-    const timerEl = document.getElementById('timerText');
-    if (!timerEl) return;
-
-    function pad(n) {
-      return String(n).padStart(2, '0');
-    }
-
-    function updateDisplay() {
-      const mins = Math.floor(seconds / 60);
-      const secs = seconds % 60;
-      timerEl.textContent = pad(mins) + ':' + pad(secs);
-    }
-
-    updateDisplay();
-
-    const interval = setInterval(function() {
-      if (seconds > 0) {
-        seconds--;
-        updateDisplay();
-      } else {
-        clearInterval(interval);
-      }
-    }, 1000);
-  })();
-
-  // ── Facebook Lead Event on CTA Click ──
   document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('ctaButton');
-    if (btn) {
-      btn.addEventListener('click', function() {
-        if (typeof fbq !== 'undefined') {
-          fbq('track', 'Lead', {
-            content_name: 'Survey Prelander',
-            currency: 'USD',
-            value: 5.00
-          });
-        }
-      });
-    }
+    const buttons = document.querySelectorAll('#ctaButton, #ctaButton2, #ctaButton3, #ctaButtonSticky');
+    buttons.forEach(function(btn) {
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          if (typeof fbq !== 'undefined') {
+            fbq('track', 'Lead', {
+              content_name: 'EarnRewards Prelander',
+              currency: 'USD',
+              value: 2.25
+            });
+          }
+        });
+      }
+    });
   });
 </script>
 
 <!-- ============================================================ -->
-<!-- BEMOB LANDING PAGE PIXEL (EXACTLY AS PROVIDED)               -->
+<!-- BEMOB LANDING PAGE PIXEL (TRUSTED UUID FROM HTML 1)           -->
 <!-- ============================================================ -->
 <script type="text/javascript">
 function bemobCb(params) {
@@ -469,8 +256,8 @@ function bemobCb(params) {
     }
 }
 </script>
-<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://go.orgsite.store/landing/6d8fafb8-50c8-4860-813b-029192258b9a?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script>
-<noscript><img src="https://go.orgsite.store/landing/6d8fafb8-50c8-4860-813b-029192258b9a?rule=1&path=1&landing=1" alt=""></noscript>
+<script type="text/javascript">!function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="https://go.orgsite.store/landing/39b64b47-9b66-4827-9d6b-bb90d8a344bd?callback=bemobCb&rule=1&path=1&landing=1&"+window.location.search.substring(1);var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}();</script>
+<noscript><img src="https://go.orgsite.store/landing/39b64b47-9b66-4827-9d6b-bb90d8a344bd?rule=1&path=1&landing=1" alt=""></noscript>
 
 </body>
 </html>
